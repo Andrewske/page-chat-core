@@ -1,0 +1,34 @@
+{
+  "name": "page-chat-core",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Headless client for the agent-dashboard page-chat API: protocol types, event folding, fetch client, React hooks, page capture.",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./protocol": "./src/protocol.ts",
+    "./chat-view": "./src/chat-view.ts"
+  },
+  "files": [
+    "src",
+    "!src/**/*.test.ts"
+  ],
+  "scripts": {
+    "test": "bun test",
+    "typecheck": "tsc --noEmit",
+    "pack": "bun pm pack"
+  },
+  "peerDependencies": {
+    "@tanstack/react-query": "^5.0.0",
+    "@zumer/snapdom": "^2.0.0",
+    "react": ">=18"
+  },
+  "devDependencies": {
+    "@tanstack/react-query": "^5.90.21",
+    "@types/bun": "^1.3.9",
+    "@types/react": "^19",
+    "@zumer/snapdom": "^2.24.15",
+    "react": "19.2.3",
+    "typescript": "^5"
+  }
+}

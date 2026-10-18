@@ -1,2 +1,5 @@
 node_modules/
 *.tgz
+
+# Claude Code: per-machine approvals stay local
+.claude/settings.local.json
